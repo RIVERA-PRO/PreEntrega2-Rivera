@@ -71,15 +71,624 @@ header{
         color: $color-amarillo;
     }
 
-    #menu-icon{
-        font-size: 34px;
-        color: $color-blanco;
-        z-index: 10001;
-        cursor: pointer;
-        display: none;
-    }
+    
 
   }
 
 
 
+  #menu-icon{
+    font-size: 34px;
+    color: $color-blanco;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.inicio{
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 0px 13%;
+
+    .inicio-text h1{
+        color: $color-blanco;
+        margin: 15px 0 15px;
+        font-size: 50px;
+      }
+
+      .inicio-text h6{
+        color: $color-amarillo;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+
+
+      .inicio-text p{
+        color: $color-amarillo;
+        font-weight: 500;
+        margin-bottom: 48px;
+      }
+
+      .latter form{
+      
+        width: 100%;
+        max-width: 460px;
+        position: relative;
+      }
+
+      .latter form input:first-child{
+        background-color: $color-blanco;
+        display: inline-block;
+        width: 100%;
+        outline: none;
+        padding: 16px 140px 16px 15px;
+        border: 2px solid var(--main-color);
+        border-radius: 30px;
+      }
+    
+      .latter form input:last-child{
+        background-color: $color-amarillo;
+        position: absolute;
+        display: inline-block;
+        border: none;
+        outline: none;
+        background: $color-amarillo;
+        color: $color-negro;
+        padding: 14px 40px;
+        border-radius: 30px;
+        cursor: pointer;
+        top: 2px;
+        right: 1px;
+      }
+
+      .inicio-img img{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        
+      }
+    
+
+  }
+
+
+  .contenedor{
+    padding: 30px 13%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+  }
+  .contenedor-box{
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow:-11.729px -11.729px 32px $color-shadow;
+    transition: all .40s ease;
+  }
+  
+  .contenedor-img{
+    width: 70px;
+    height: 60px;
+    display: flex;
+  
+  }
+  
+  .contenedor-box:hover{
+    transform: translateY(-15px);
+  }
+  .contenedor-text h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .contenedor-text p{
+    color: #eaff6a;
+    font-weight: 500;
+  }
+  
+  .center-text{
+    text-align: center;
+  }
+  .center-text h5{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .center-text h2{
+    line-height: 1.2;
+  }
+  
+
+
+
+  .intro{
+    padding: 0px 12%;
+   
+  }
+  .intro-content{
+    display: flex;
+    justify-content:center;
+    
+    
+  }
+  
+  .intro p{
+    color: $color-negro;
+    background:linear-gradient(30deg,$color-violeta, $color-amarillo);
+    padding: 30px 30px;
+    border-radius: 5px;
+    margin: 10px;
+  
+  }
+  
+  .intro-img{
+    height: 300px;
+    width: 400px;
+    display: flex;
+  }
+  
+  .intro-horarios spam{
+    text-align: center;
+    color: $color-blanco;
+  
+  }
+  .intro-horarios h5{
+    text-align: center;
+    color: $color-amarillo;
+  
+  }
+
+//empresas
+
+.empresa{   
+  padding: 0px 13%;
+  background-position: center;	
+}
+.empresa-text h1{
+  display: flex;
+  justify-content: center;
+}
+.empresa-text p{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.empresa p{
+  color: $color-blanco;
+  text-align: center;
+  border: 1px solid $color-amarillo; 
+  border-radius: 11px;
+  padding: 20px 30px;
+  box-shadow:-11.729px -11.729px 32px $color-shadow;
+}
+.empresa h1{
+  text-align: center;
+  color: $color-blanco;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  padding-top: 10rem;
+}
+.empresa-img img{
+  padding: 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.empresa-button{
+      
+  color: $color-blanco;
+  margin-bottom: 18px;
+  text-align: center;
+  }
+   
+  .empresa button{
+    background-color: $color-amarillo;
+    color: $color-negro;
+    padding: 14px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    
+  }
+   
+  .empresa h2{
+    background:linear-gradient(30deg,$color-amarillo, $color-violeta);
+    color: $color-violeta;
+    text-align: center;
+    padding: 40px 40px;
+  
+  }
+  .empresa h4{
+    color: $color-violeta;
+    text-align: center;
+    padding: 40px 40px;
+    
+  
+  }
+  spam{
+    color: $color-negro;
+  }
+
+//cursos
+.cursos{
+  padding: 0px 13%;
+}
+.cursos p{
+  color: $color-blanco;
+  text-align: center;
+  border: 1px solid #eaff6a; 
+  border-radius: 11px;
+  padding: 20px 30px;
+  box-shadow:-11.729px -11.729px 32px $color-shadow;
+  margin-top: 3rem;
+}
+
+.cursos-text h1{
+  display: flex;
+  justify-content: center;
+}
+
+.cursos h1{
+  padding-top: 10rem;
+  color: $color-blanco;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+
+}
+
+.cursos-img img{
+  padding: 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.cursos-li{
+  color: $color-violeta;
+  margin-bottom: 18px;
+  text-align: center;
+  border: 1px solid $color-amarillo; 
+  border-radius: 11px;
+  padding: 20px 30px;
+  box-shadow:-11.729px -11.729px 32px $color-shadow;
+
+}
+.cursos-li li a:hover{
+  transform: translateX(10px);
+  color: $color-amarillo;
+}
+
+.cursos-li li a{
+  display: block;
+  color: $color-blanco;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .40s ease;
+}
+
+
+.carreras-li{	
+  color: $color-violeta;
+  margin-bottom: 18px;
+  text-align: center;
+  border: 1px solid $color-amarillo; 
+  border-radius: 11px;
+  padding: 20px 30px;
+  box-shadow:-11.729px -11.729px 32px $color-shadow;
+}
+
+.carreras-li li a:hover{
+  transform: translateX(10px);
+  color: $color-amarillo;
+}
+
+.carreras-li li a{
+  display: block;
+  color: $color-blanco;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .40s ease;
+}
+.tarjetas{
+  padding: 3rem 13%;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 300px;
+  height: 390px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px #1a1e25;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.25s;
+  background:linear-gradient(30deg,$color-amarillo, $color-violeta);
+}
+
+.card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px #1a1e25;
+}
+
+.card p{
+  padding:  1rem;
+  color: #fff;
+}
+.listas ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tarjetas h5{
+  font-size: 20px;
+}
+
+
+/* Sobre Nosotros */
+
+.sobre-nosotos{
+  padding: 0px 13%;
+}
+.sobre-nosotos-text p{
+  color: $color-blanco;
+  text-align: center;
+  border: 1px solid $color-violeta; 
+  border-radius: 11px;
+  padding: 20px 30px;
+  box-shadow:-11.729px -11.729px 32px $color-shadow;
+}
+
+.sobre-nosotos h1{
+  
+  padding: 30px;
+  color: $color-blanco;
+  font-size: 50px;
+  text-align: center;
+}
+.sobre-nosotos-text h1{
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.nosotros-img img{
+  width: 100%;
+  display: flex;
+  border-radius:16px;
+  -webkit-border-radius:16px;
+  -moz-border-radius:16px;
+  -ms-border-radius:16px;
+  -o-border-radius:16px;
+}
+.mision-vision{
+  width: 100%;
+  padding:30px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background:linear-gradient(30deg,$color-amarillo, $color-violeta);
+  font-size: 20px;
+}
+.mision-vision h3{
+  color: $color-negro;
+}
+
+ /*CONTACTOS*/
+    .contactos{
+      padding: 0px 13%;
+    }
+ .contactos-text h1{
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+ }
+ .contactos p{
+  color: #eaff6a;
+  text-align: center;
+  border: 1px solid #dc69f5; 
+  border-radius: 11px;
+  padding: 20px 30px;
+  margin: 20px;
+  box-shadow:-11.729px -11.729px 32px $color-shadow;
+}
+.contactos h1{
+  
+  
+  width: 100%;
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  display: flex;
+
+}
+
+.contactos-maps{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.contactos-maps iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border-radius: 20px;
+}
+
+//footer
+
+  .contacto{
+    padding: 60px 13%;
+  }
+  .main-contacto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+  }
+  .contacto-content img{
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacto-content li{
+    color: $color-blanco;
+    margin-bottom: 18px;
+  }
+  .contacto-content li a{
+    display: block;
+    color: $color-blanco;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all .40s ease;
+  }
+  .contacto-content li a:hover{
+    transform: translateX(10px);
+    color: $color-amarillo;
+  }
+
+  .last-text p{
+    text-align: center;
+    padding: 18px;
+    color: $color-blanco;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 1410px){
+    header{
+      padding: 10px 3%;
+      transition: .2s;
+    }
+    header.sticky{
+      padding: 12px 3%;
+      transition: .2s;
+    }
+    section{
+      padding: 70px 3%;
+      transition: .2s;
+    }
+    .contenedor{
+      padding: 70px 3%;
+      transition: .2s;
+    }
+    .contacto{
+      padding: 60px 3%;
+      transition: .2s;
+    }
+    
+  
+  }
+  
+  
+  @media (max-width: 1025px){
+    
+    header{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .navbar{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all .40s ease;
+    }
+    .navbar a{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 1.3rem 0;
+    }
+    .navbar a{
+      display: block;
+      margin: 1.3rem 0;
+    }
+    .navbar a:hover{
+      transform: translateY(-5px);
+    }
+
+    .contactos{
+      padding: 0px 0px;
+    }
+    .sobre-nosotos{
+      padding: 0px 0px;
+    }
+    .cursos{
+      padding: 0px 0px;
+    }
+    .empresa{
+      padding: 0px 0px;
+    }
+    .inicio{
+      padding: 0px 0px;
+    }
+    .intro{
+      padding: 0px 1px;
+    }
+    
+  }
+  
+  @media (max-width: 890px){
+    .inicio{
+      height: 120vh;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .inicio{
+      
+      padding: 0px 4%;
+      padding-top: 10rem ;
+    }
+    .navbar{
+      margin: -1.5rem;
+    }
+    .intro-img{
+      font-display: flex;
+      justify-content: center;
+      display: flex;
+    }
+    .intro-img img{
+      font-display: flex;
+      justify-content: center;
+      height: 250px;
+      width:300px;
+    }
+    
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+  
